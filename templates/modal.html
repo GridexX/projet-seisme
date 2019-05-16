@@ -1,0 +1,122 @@
+<html>
+    <head>
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        
+<div class="container">
+        <h2>Modal Login Example</h2>
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-default btn-lg" id="myBtn">Légende</button>
+      
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+          
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header" style="padding:0em 1em;">
+                    
+                <h3 class='top-title'>Bienvenue sur le site de cartographie des séismes !</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="false" class="close-button">&times;</span>
+                </button>
+              </div>
+
+              <div class="modal-body">
+                  <h5 style="text-align: center; color: aqua">Légende</h5>
+                  
+                  <hr>
+
+                  <table class="table">
+                      <thead>
+                          <tr>
+                              <th scope="col"><i style='margin-left: 1.9em '>#</i></th>
+                              <th scope="col">Magnitude (échelle de Richter)</th>
+                          </tr>
+                          <tr>
+                            <th scope="col"><i class="fas fa-map-marker" style="color: #72af26; margin-left: 0.7em"></i></th>
+                            <th scope="col">Inférieure à 2</th>
+                          </tr>
+                          <tr>
+                                <th scope="col"><i class="fas fa-map-marker" style="color: #728224; margin-left: 0.7em"></i></th>
+                                <th scope="col">Entre 2 et 4</th>
+                          </tr>
+                          <tr>
+                                <th scope="col"><i class="fas fa-map-marker" style="color: #f69730; margin-left: 0.7em"></i></th>
+                                <th scope="col">Entre 4 et 6</th>
+                          </tr>
+                          <tr>
+                                <th scope="col"><i class="fas fa-map-marker" style="color: #d63e2a; margin-left: 0.7em"></i></th>
+                                <th scope="col">6 &lt; Magnitude &lt; 8</th>
+                          </tr>
+                          <tr>
+                                <th scope="col"><i class="fas fa-map-marker" style="color: #a23336; margin-left: 0.7em; margin-right: 2.2 em;"></i></th>
+                                <th scope="col">Supérieure à 8</th>
+                          </tr>
+                      </thead>
+
+                  </table>
+                  <p style='text-align: center'>Site crée par des élèves de terminale, dans le cadre du projet ISN, voir <a href='equipe.html'>l'équipe</a> pour plus d'infos</p>
+               
+              </div>
+              
+              <div class="modal-footer">
+
+               
+            </div>
+            
+            
+          </div>
+        </div> 
+        
+      </div>
+
+    </div>
+       
+    </body>
+
+    <style>
+    .modal-header{
+    background: linear-gradient(75deg, rgb(160, 0, 99), red);
+    color:white;
+    text-align: center;
+    font-size: 1.2em;
+    
+  }
+
+  .top-title{
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+  }
+
+  .fa-map-marker{
+    font-size: 2em;
+  }
+
+  .close-button{
+     margin-right: -0.5em;
+     margin-top: -0.2em;
+	color: #ffffff;
+  }
+
+
+    </style>
+
+    <script>
+        $('#myModal').modal('show')
+          
+        $(document).ready(function(){
+            $("#myBtn").click(function(){
+                $("#myModal").modal();
+            });
+        });
+    </script>
+
+</html>
