@@ -40,7 +40,7 @@ def jinja():
                        minmagnitude=0)
 
     listseismes = lastseismes(eventlist)
-    return render_template('map_v2.html', listseismes=listseismes)
+    return render_template('map_v2_1.html', listseismes=listseismes)
 
 
 @app.route('/lastseismes')
@@ -53,7 +53,7 @@ def seismes(num_page=5):
                        minmagnitude=0)
 
     listseismes = lastseismes(eventlist)
-    return render_template('map_v2.html', listseismes=listseismes)
+    return render_template('map_v2_1.html', listseismes=listseismes)
 
 
 if __name__ == '__main__':
