@@ -1,0 +1,301 @@
+/* Gradient background for all the html files not modify */
+#bg-gradient {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0%;
+	left: 0%;
+	background-image: linear-gradient(50deg, #262A34, #444444, #aaaaaa);
+}
+
+h1 {
+  text-align:center;
+  width: 500px;
+  border: 10px solid black;
+  border-radius: 2em;
+  background-color: white;
+  color : black;
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: fantasy;
+  top: 0%;
+}
+
+.button-footer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 45%;
+}
+
+#mapid {
+  position: absolute;
+  width: 90.0%;
+  height: 70.0%;
+  left: 5%;
+  top: 14.9%;
+}
+
+.container {
+  position: absolute;
+  left: 26%;
+}
+
+.border-primary
+{
+  color: white;
+  position: absolute;
+  top: 18%;
+  left: 10%;
+  right: 10%;
+  font-family: comic-sans-ms;
+}
+
+
+#video1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: 72%;
+  bottom: 28%;
+}
+
+
+.p-source {
+  text-align: center;
+  top: 88%;
+  color: white
+}
+
+
+
+@media print {
+  .container {
+    width: auto;
+  }
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-top: 32%;
+}
+
+
+.position-absolute {
+  top:45%;
+  bottom: 55%;
+  position:relative;
+  right: 1.18%;
+  left:1.18%
+}
+
+/* Arret du bordel de Gabriel */
+
+/* CSS Pour l'équipe */
+
+
+.gradient-rb{
+  border: 0;
+  height: .2em;
+  border-radius: 1em;
+  background: #ff0000;
+  background: -webkit-linear-gradient(90deg, red, blue);
+  background: -moz-linear-gradient(90deg, red, blue);
+  background: -o-linear-gradient(90deg, red, blue);
+  background: -ms-linear-gradient(90deg, red, blue);
+  background: linear-gradient(90deg, red, blue);
+}
+
+.gradient-bg{
+  border: 0;
+  height: .2em;
+  border-radius: 1em;
+  background: #ff0000;
+  background: -webkit-linear-gradient(90deg, blue,green);
+  background: -moz-linear-gradient(90deg, blue,green);
+  background: -o-linear-gradient(90deg, blue,green);
+  background: -ms-linear-gradient(90deg, blue,green);
+  background: linear-gradient(90deg, blue,green);
+}
+
+.gradient-gr{
+  border: 0;
+  height: .2em;
+  border-radius: 1em;
+  background: #ff0000;
+  background: -webkit-linear-gradient(90deg, green,red);
+  background: -moz-linear-gradient(90deg, green,red);
+  background: -o-linear-gradient(90deg, green,red);
+  background: -ms-linear-gradient(90deg, green,red);
+  background: linear-gradient(90deg, green,red);
+}
+
+
+.card-group{
+  margin: 6.5em 6.5em 0em 6.5em;
+}
+
+.card{
+  margin: 1.2em;
+  box-shadow: .3em .3em 1em rgba(0,0,0,0.3); border:none;
+  transition-duration: 500ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.18,.89,.46,1.07);
+}
+
+.card:hover{
+  transform: scale(1.02);
+}
+
+.card-image-top{
+  width: 15em;
+  display: block;
+  margin: 0 auto;
+  margin-top: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.fab.fa-code, .fas.fa-code{
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  font-size: 1.5em;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0.2em;
+  margin-bottom: 0.5em;
+  color: white;
+  background-color: #353535;
+}
+
+.fa-code:hover{
+  color: white;
+  background-color: black;
+}
+
+      
+.fa-2x{
+  margin: 0.5em;
+}
+
+.fab.fa-rotating:hover{  
+transform: scale(1.2) rotate(359deg);
+
+}
+
+.fab.fa-rotating{
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 40px;
+  text-align: center;
+  border-radius: 50%;
+  margin-top: 10px;
+  color: #ffffff;
+  background-color: #3C599F;
+  transition-duration: 500ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.18,.89,.46,1.07);
+  cursor: pointer;
+}
+
+.fab.fa-facebook:hover {
+  color:#3C599F;
+  background-color:#ffffff;
+}
+
+.fab.fa-instagram:hover {
+  color: #333333;
+  background: #ffffff;
+}
+
+.fab.fa-twitter:hover {
+  color: #4099FF;
+  background-color:#ffffff;
+}
+
+.fab.fa-twitter {
+  color: #ffffff;
+  background-color:#4099FF;
+}
+
+.fab.fa-snapchat-ghost {
+  color: #ffffff;
+  background-color: #fffc01;
+}
+
+.fab.fa-snapchat-ghost:hover {
+  color: #fffc01;
+  background-color: #ffffff;
+}
+
+
+.fab.fa-instagram {
+  background: radial-gradient(circle farthest-corner at 35% 100%, #fec564, transparent 50%),
+  radial-gradient(circle farthest-corner at 10% 140%, #feda7e, transparent 50%),
+  radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+  radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
+  radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+  radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
+  radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+  linear-gradient(#6559ca, #bc318f 30%, #e42e66 50%, #fa5332 70%, #ffdc80 100%);
+  color: #fff;
+  padding: 0px;
+  border-radius: 50%;
+}
+
+/* CSS pour la légende */
+
+.modal-header{
+  background: linear-gradient(75deg, rgb(160, 0, 99), red);
+  color:white;
+  text-align: center;
+  font-size: 1.2em;
+  
+}
+
+.top-title{
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+}
+
+.fa-map-marker{
+  font-size: 2em;
+}
+
+.close-button{
+   margin-right: -0.5em;
+   margin-top: -0.2em;
+color: #ffffff;
+}
+
+.legende-title{
+  text-align: center;
+  color: #343a40;
+  margin-bottom: 0.5em;
+}
+
+/* CSS Email button */
+
+
+input {
+  width: auto;
+  background:#eaeaea;
+  border-radius: 0.3em;
+
+}
+
+.copy-button1, .copy-button2, .copy-button3 {
+  margin-top: -0.35em;
+}
+
+.fas.fa-envelope {
+  padding-top: 0.2em;
+  font-size: 1.5em;
+}

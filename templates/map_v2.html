@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-	<head>    
+	<head> 
+		<link rel="stylesheet" href="style1.css" />   
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 		<script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
 		<script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
@@ -69,16 +70,23 @@
             extraClasses: 'fa-rotate-0'
         });
 
+		var tooltip = L.tooltip({
+			target: marker,
+			map: mymap,
+			fadeAnimation: true,
+			direction: top,
+			html: "Click to see earthquake"
+		});
+
         marker.setIcon(icon);
-		marker.bindTooltip("Click to see earthquake");
+		marker.bindTooltip(tooltip);
+
 		var index = {{loop.index}};
 		var len = {{loop.length}};
 		if(index == len){
 			marker.bindTooltip("Click to see earthquake").openTooltip();
 		}
         marker.bindPopup("<b>{{event.location}}</b><br /> " +
-			"{{loop.length}}" +
-			"{{loop.index}}" +
 	    	"Magnitude : {{event.magnitude}}<br />" +
 	    	"Time : {{event.time}} (UTC)<br />" +
 	    	"Depth : {{event.depth}} kilometers<br />" +
