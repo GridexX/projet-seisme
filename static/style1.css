@@ -1,41 +1,93 @@
 /* Gradient background for all the html files not modify */
+
+.button-footer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 43.5%;
+}
+
+.button-footer2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 55.45%;
+}
+
+.button-header {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+}
+
+.button-shadow {
+  box-shadow: .3em .3em 1em rgba(0,0,0,0.3); border:none;
+}
+
 #bg-gradient {
 	position: absolute;
 	height: 100%;
 	width: 100%;
 	top: 0%;
 	left: 0%;
-	background-image: linear-gradient(50deg, #262A34, #444444, #aaaaaa);
+  background-image: linear-gradient(to bottom, black 5%, #262A34, #444444 85%, #aaaaaa);
 }
 
-h1 {
-  text-align:center;
-  width: 500px;
-  border: 10px solid black;
-  border-radius: 2em;
-  background-color: white;
-  color : black;
-  padding: 10px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: fantasy;
+#bg-gradient2 {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0%;
+	left: 0%;
+  background-image: linear-gradient(50deg, #262A34, #444444, #aaaaaa);
+}
+
+#bg-gradient3 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
   top: 0%;
+  left: 0%;
+  bottom:0%;
+  background-image: linear-gradient(50deg, 	#ff4500, 	#cd3333, 	#ff0000)
 }
 
-.button-footer {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 45%;
+.h1-acceuil{
+  text-align: center;
+  color: white;
+  margin-top: 1%;
+  font-family: monospace;
+
 }
+
+.h3-acceuil{
+
+  text-align:center;
+  color : rgba(255, 255, 255, 0.6);
+  display: block;
+  font-family: monospace;
+  height: 2em;
+  margin-top: 0.6%;
+
+
+}
+
+
+.logo1{
+  position: absolute;
+  top: 2%;
+  left: 22%;
+  color: white;
+}
+
 
 #mapid {
   position: absolute;
-  width: 90.0%;
-  height: 70.0%;
-  left: 5%;
-  top: 14.9%;
+  width: 92%;
+  height: 70%;
+  left: 4%;
+  top: 21%;
 }
 
 .container {
@@ -291,11 +343,18 @@ input {
 
 }
 
-.copy-button1, .copy-button2, .copy-button3 {
+.copy-button, .copy-button1, .copy-button2, .copy-button3 {
   margin-top: -0.35em;
 }
 
 .fas.fa-envelope {
-  padding-top: 0.2em;
+  padding-bottom: 0.7em;
   font-size: 1.5em;
 }
+
+.toast-bottom{
+  position: absolute;
+  margin-right: 2em;
+  margin-top: calc(54% - 2em)
+}
+
