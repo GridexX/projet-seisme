@@ -46,7 +46,7 @@ def seismes(num_page=5, refresh=1):
 
 @app.route('/lastseismes_v2/<int:date_format>/')
 @app.route('/lastseismes_v2/<int:date_format>/<int:refresh>')
-def seismes_v2(date_format, refresh=1):
+def seismes_v2(date_format, refresh=1): 
     date_now = datetime.now()
     if date_format == 0:
         date_past= date_now - timedelta(hours = date_now.hour)
@@ -67,6 +67,10 @@ def seismes_v2(date_format, refresh=1):
 @app.route('/equipe')
 def equipe():
     return render_template('equipe_v2.html')
+
+@app.route('/infos')
+def infos():
+    return render_template('infos2.html')
 
 
 if __name__ == '__main__':

@@ -14,6 +14,14 @@
   margin-top: 55.45%;
 }
 
+.button-footer-info {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -1%;
+}
+
+
 .button-header {
   display: block;
   margin-left: auto;
@@ -88,11 +96,6 @@
   height: 70%;
   left: 4%;
   top: 21%;
-}
-
-.container {
-  position: absolute;
-  left: 26%;
 }
 
 .border-primary
@@ -190,7 +193,7 @@
 
 
 .card-group{
-  margin: 6.5em 6.5em 0em 6.5em;
+  margin: 4.5em 4.5em 0em 4.5em;
 }
 
 .card{
